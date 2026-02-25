@@ -5,7 +5,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // for data change in widget we use stateless widget
   const MyApp({super.key});
 
   // This widget is the root of your application.
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue)),
-      home: const MyHomePage(title: 'Flutter Demo'),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
@@ -35,14 +34,21 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
       body: Center(
-        child: Text(
-          "This is My STYLE",
-          style: TextStyle(
-            fontFamily: 'myFont2',
-            fontSize: 25,
-            color: Colors.deepOrange,
-            fontWeight: FontWeight.w900,
-            backgroundColor: Colors.lightGreenAccent,
+        child: ElevatedButton(
+          child: Text("Click here!", style: TextStyle(fontSize: 25, color: Colors.deepPurpleAccent)),
+          onPressed: () {
+            //  --> printing on terminal run.
+            print("Text button clicked!");
+          },
+          // button methods:
+          onLongPress: () {
+            print("Text button long pressed!");
+          },
+          // decoration of button
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 255, 111, 159),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           ),
         ),
       ),
