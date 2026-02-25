@@ -33,21 +33,23 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
-      body: ElevatedButton(
-        child: Text("Click here!", style: TextStyle(fontSize: 25, color: Colors.deepPurpleAccent)),
-        onPressed: () {
-          //  --> printing on terminal run.
-          print("Text button clicked!");
-        },
-        // button methods:
-        onLongPress: () {
-          print("Text button long pressed!");
-        },
-        // decoration of button
-        style: ElevatedButton.styleFrom(
-          backgroundColor: const Color.fromARGB(255, 255, 111, 159),
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      body: Center(
+        child: ElevatedButton(
+          child: Text("Click here!", style: TextStyle(fontSize: 25, color: Colors.deepPurpleAccent)),
+          onPressed: () {
+            //  --> printing on terminal run.
+            print("Text button clicked!");
+          },
+          // button methods:
+          onLongPress: () {
+            print("Text button long pressed!");
+          },
+          // decoration of button
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 255, 111, 159),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          ),
         ),
       ),
     );
