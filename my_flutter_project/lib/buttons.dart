@@ -39,6 +39,10 @@ class _MyHomePageState extends State<MyHomePage> {
           //  --> printing on terminal run.
           print("Text button clicked!");
         },
+        // button methods:
+        onLongPress: () {
+          print("Text button long pressed!");
+        },
       ),
     );
   }
