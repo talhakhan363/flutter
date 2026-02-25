@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.pinkAccent,
               width: 150,
               height: 150,
-              child: Center(child: Image.asset('assets/images/flutter1.png')),
+              child: Center(child: Image.asset('assets/images/person1.jpg')),
             ),
           ),
     );
