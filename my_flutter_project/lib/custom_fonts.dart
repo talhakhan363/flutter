@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
       body: Center(
         child: Text(
-          "This is My STYL",
+          "This is My STYLE",
           style: TextStyle(
             fontFamily: 'myFont2',
             fontSize: 25,
