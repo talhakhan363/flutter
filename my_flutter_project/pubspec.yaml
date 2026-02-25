@@ -73,7 +73,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+  fonts:
+    - family: myFont
+      fonts:
+        - asset: assets/fonts/Caveat-VariableFont_wght.ttf
+    - family: myFont2
+      fonts:
+        - asset: assets/fonts/Caveat-Tinos-Regular.ttf
+        
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
