@@ -79,7 +79,7 @@ flutter:
         - asset: assets/fonts/Caveat-VariableFont_wght.ttf
     - family: myFont2
       fonts:
-        - asset: assets/fonts/Caveat-Tinos-Regular.ttf
+        - asset: assets/fonts/Tinos-Regular.ttf
         
   #   - family: Schyler
   #     fonts:
