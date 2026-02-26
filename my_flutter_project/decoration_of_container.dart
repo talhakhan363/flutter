@@ -11,10 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue.shade800)),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Decoration of Container'),
     );
   }
 }
@@ -38,10 +37,10 @@ class _MyHomePageState extends State<MyHomePage> {
           Container(
             width: double.infinity,
             height: double.infinity,
-            color: Colors.white,
+            color: Colors.purple.shade200,
             child: Column(
               children: [
-                Container(width: 10, height: 10, decoration: BoxDecoration(color: Colors.white)),
+                Container(width: 10, height: 10, decoration: BoxDecoration(color: Colors.white)), //--> gap
                 Container(
                   width: 100,
                   height: 100,
@@ -63,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(
                     color: Colors.purple.shade500,
                     borderRadius: BorderRadius.only(topRight: Radius.circular(21), bottomLeft: Radius.circular(21)),
-                    border: Border.all(width: 4, color: Colors.black),
+                    border: Border.all(width: 2, color: Colors.black),
                   ),
                 ),
                 Container(width: 10, height: 10, decoration: BoxDecoration(color: Colors.white)),
