@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                width: 54,
+                width: 56,
                 height: 50,
                 decoration: BoxDecoration(
                   color: Colors.tealAccent.shade700,
@@ -81,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                width: 43,
+                width: 45,
                 height: 50,
                 decoration: BoxDecoration(
                   color: Colors.redAccent.shade700,
@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                width: 38,
+                width: 34,
                 height: 50,
                 decoration: BoxDecoration(
                   color: Colors.purpleAccent.shade700,
@@ -151,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                width: 54,
+                width: 56,
                 height: 50,
                 decoration: BoxDecoration(
                   color: Colors.tealAccent.shade400,
@@ -162,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                width: 43,
+                width: 45,
                 height: 50,
                 decoration: BoxDecoration(
                   color: Colors.redAccent.shade400,
@@ -173,7 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                width: 38,
+                width: 34,
                 height: 50,
                 decoration: BoxDecoration(
                   color: Colors.purpleAccent.shade400,
@@ -201,7 +201,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 39,
                 height: 50,
-                color: Colors.pinkAccent.shade200,
+                decoration: BoxDecoration(
+                  color: Colors.pinkAccent.shade200,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Gym day", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -209,7 +212,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightBlueAccent.shade200,
+                decoration: BoxDecoration(
+                  color: Colors.lightBlueAccent.shade200,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Push", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -217,31 +223,43 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.limeAccent.shade200,
+                decoration: BoxDecoration(
+                  color: Colors.limeAccent.shade200,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Pull", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
-                width: 54,
+                width: 56,
                 height: 50,
-                color: Colors.tealAccent.shade200,
+                decoration: BoxDecoration(
+                  color: Colors.tealAccent.shade200,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Legs", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
-                width: 43,
+                width: 45,
                 height: 50,
-                color: Colors.redAccent.shade200,
+                decoration: BoxDecoration(
+                  color: Colors.redAccent.shade200,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Shoulder", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
-                width: 38,
+                width: 34,
                 height: 50,
-                color: Colors.purpleAccent.shade200,
+                decoration: BoxDecoration(
+                  color: Colors.purpleAccent.shade200,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Arms & legs", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -249,7 +267,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightGreenAccent.shade200,
+                decoration: BoxDecoration(
+                  color: Colors.lightGreenAccent.shade200,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Rest", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -261,7 +282,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 39,
                 height: 50,
-                color: Colors.pinkAccent.shade100,
+                decoration: BoxDecoration(
+                  color: Colors.pinkAccent.shade100,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Skill work", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -269,7 +293,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightBlueAccent.shade100,
+                decoration: BoxDecoration(
+                  color: Colors.lightBlueAccent.shade100,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -277,15 +304,43 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.limeAccent.shade100,
+                decoration: BoxDecoration(
+                  color: Colors.limeAccent.shade100,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
-                width: 54,
+                width: 56,
                 height: 50,
-                color: Colors.tealAccent.shade100,
+                decoration: BoxDecoration(
+                  color: Colors.tealAccent.shade100,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
+                child: Center(
+                  child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 45,
+                height: 50,
+                decoration: BoxDecoration(
+                  color: Colors.redAccent.shade100,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
+                child: Center(
+                  child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 34,
+                height: 50,
+                decoration: BoxDecoration(
+                  color: Colors.purpleAccent.shade100,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -293,23 +348,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.redAccent.shade100,
-                child: Center(
-                  child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
+                decoration: BoxDecoration(
+                  color: Colors.lightGreenAccent.shade100,
+                  border: Border.all(width: 1, color: Colors.black),
                 ),
-              ),
-              Container(
-                width: 38,
-                height: 50,
-                color: Colors.purpleAccent.shade100,
-                child: Center(
-                  child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
-                ),
-              ),
-              Container(
-                width: 43,
-                height: 50,
-                color: Colors.lightGreenAccent.shade100,
                 child: Center(
                   child: Text("CoverUp", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
