@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 39,
                 height: 50,
-                color: Colors.pinkAccent.shade100,
+                color: Colors.pinkAccent.shade700,
                 child: Center(
                   child: Text("Days & Date", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightBlueAccent.shade100,
+                color: Colors.lightBlueAccent.shade700,
                 child: Center(
                   child: Text("Monday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.limeAccent.shade100,
+                color: Colors.limeAccent.shade700,
                 child: Center(
                   child: Text("Tuesday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 54,
                 height: 50,
-                color: Colors.tealAccent.shade100,
+                color: Colors.tealAccent.shade700,
                 child: Center(
                   child: Text("Wednesday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.redAccent.shade100,
+                color: Colors.redAccent.shade700,
                 child: Center(
                   child: Text("Thursday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 38,
                 height: 50,
-                color: Colors.purpleAccent.shade100,
+                color: Colors.purpleAccent.shade700,
                 child: Center(
                   child: Text("Friday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightGreenAccent.shade100,
+                color: Colors.lightGreenAccent.shade700,
                 child: Center(
                   child: Text("Weekend", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -101,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.pinkAccent.shade100,
                 child: Center(
-                  child: Text("Days & Date", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Uni Study", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -109,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.lightBlueAccent.shade100,
                 child: Center(
-                  child: Text("Monday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("PC & DC", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -117,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.limeAccent.shade100,
                 child: Center(
-                  child: Text("Tuesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Mod & Sim", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.tealAccent.shade100,
                 child: Center(
-                  child: Text("Wednesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("SPM", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -133,7 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.redAccent.shade100,
                 child: Center(
-                  child: Text("Thursday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("CAcc", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -141,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.purpleAccent.shade100,
                 child: Center(
-                  child: Text("Friday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("PC & DC", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -149,7 +149,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.lightGreenAccent.shade100,
                 child: Center(
-                  child: Text("Weekend", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("CoverUp", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
             ],
@@ -161,7 +161,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.pinkAccent.shade100,
                 child: Center(
-                  child: Text("Days & Date", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Gym day", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -169,7 +169,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.lightBlueAccent.shade100,
                 child: Center(
-                  child: Text("Monday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Push", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -177,7 +177,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.limeAccent.shade100,
                 child: Center(
-                  child: Text("Tuesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Pull", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -185,7 +185,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.tealAccent.shade100,
                 child: Center(
-                  child: Text("Wednesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Legs", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -193,7 +193,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.redAccent.shade100,
                 child: Center(
-                  child: Text("Thursday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Shoulder", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -201,7 +201,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.purpleAccent.shade100,
                 child: Center(
-                  child: Text("Friday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Arms & legs", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -209,7 +209,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.lightGreenAccent.shade100,
                 child: Center(
-                  child: Text("Weekend", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Rest", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
             ],
@@ -221,7 +221,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.pinkAccent.shade100,
                 child: Center(
-                  child: Text("Days & Date", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Skill work", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -229,7 +229,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.lightBlueAccent.shade100,
                 child: Center(
-                  child: Text("Monday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -237,7 +237,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.limeAccent.shade100,
                 child: Center(
-                  child: Text("Tuesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -245,7 +245,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.tealAccent.shade100,
                 child: Center(
-                  child: Text("Wednesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -253,7 +253,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.redAccent.shade100,
                 child: Center(
-                  child: Text("Thursday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -261,7 +261,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.purpleAccent.shade100,
                 child: Center(
-                  child: Text("Friday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("Flutter", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
@@ -269,7 +269,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50,
                 color: Colors.lightGreenAccent.shade100,
                 child: Center(
-                  child: Text("Weekend", style: TextStyle(fontSize: 10, color: Colors.black)),
+                  child: Text("CoverUp", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
             ],
