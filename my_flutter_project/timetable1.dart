@@ -37,59 +37,239 @@ class _MyHomePageState extends State<MyHomePage> {
           Row(
             children: [
               Container(
-                width: 40,
+                width: 39,
                 height: 50,
                 color: Colors.pinkAccent.shade100,
                 child: Center(
-                  child: Text("Hello World", style: TextStyle(fontSize: 25, color: Colors.deepOrange)),
+                  child: Text("Days & Date", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
-                width: 40,
+                width: 43,
                 height: 50,
-                color: Colors.pinkAccent.shade100,
+                color: Colors.lightBlueAccent.shade100,
                 child: Center(
-                  child: Text("Hello World", style: TextStyle(fontSize: 25, color: Colors.deepOrange)),
+                  child: Text("Monday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
-                width: 40,
+                width: 43,
                 height: 50,
-                color: Colors.pinkAccent.shade100,
+                color: Colors.limeAccent.shade100,
                 child: Center(
-                  child: Text("Hello World", style: TextStyle(fontSize: 25, color: Colors.deepOrange)),
+                  child: Text("Tuesday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
-                width: 40,
+                width: 54,
                 height: 50,
-                color: Colors.pinkAccent.shade100,
+                color: Colors.tealAccent.shade100,
                 child: Center(
-                  child: Text("Hello World", style: TextStyle(fontSize: 25, color: Colors.deepOrange)),
+                  child: Text("Wednesday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
-                width: 40,
+                width: 43,
                 height: 50,
-                color: Colors.pinkAccent.shade100,
+                color: Colors.redAccent.shade100,
                 child: Center(
-                  child: Text("Hello World", style: TextStyle(fontSize: 25, color: Colors.deepOrange)),
+                  child: Text("Thursday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
-                width: 40,
+                width: 38,
                 height: 50,
-                color: Colors.pinkAccent.shade100,
+                color: Colors.purpleAccent.shade100,
                 child: Center(
-                  child: Text("Hello World", style: TextStyle(fontSize: 25, color: Colors.deepOrange)),
+                  child: Text("Friday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
               Container(
-                width: 40,
+                width: 43,
+                height: 50,
+                color: Colors.lightGreenAccent.shade100,
+                child: Center(
+                  child: Text("Weekend", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Container(
+                width: 39,
                 height: 50,
                 color: Colors.pinkAccent.shade100,
                 child: Center(
-                  child: Text("Hello World", style: TextStyle(fontSize: 25, color: Colors.deepOrange)),
+                  child: Text("Days & Date", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.lightBlueAccent.shade100,
+                child: Center(
+                  child: Text("Monday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.limeAccent.shade100,
+                child: Center(
+                  child: Text("Tuesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 54,
+                height: 50,
+                color: Colors.tealAccent.shade100,
+                child: Center(
+                  child: Text("Wednesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.redAccent.shade100,
+                child: Center(
+                  child: Text("Thursday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 38,
+                height: 50,
+                color: Colors.purpleAccent.shade100,
+                child: Center(
+                  child: Text("Friday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.lightGreenAccent.shade100,
+                child: Center(
+                  child: Text("Weekend", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Container(
+                width: 39,
+                height: 50,
+                color: Colors.pinkAccent.shade100,
+                child: Center(
+                  child: Text("Days & Date", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.lightBlueAccent.shade100,
+                child: Center(
+                  child: Text("Monday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.limeAccent.shade100,
+                child: Center(
+                  child: Text("Tuesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 54,
+                height: 50,
+                color: Colors.tealAccent.shade100,
+                child: Center(
+                  child: Text("Wednesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.redAccent.shade100,
+                child: Center(
+                  child: Text("Thursday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 38,
+                height: 50,
+                color: Colors.purpleAccent.shade100,
+                child: Center(
+                  child: Text("Friday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.lightGreenAccent.shade100,
+                child: Center(
+                  child: Text("Weekend", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Container(
+                width: 39,
+                height: 50,
+                color: Colors.pinkAccent.shade100,
+                child: Center(
+                  child: Text("Days & Date", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.lightBlueAccent.shade100,
+                child: Center(
+                  child: Text("Monday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.limeAccent.shade100,
+                child: Center(
+                  child: Text("Tuesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 54,
+                height: 50,
+                color: Colors.tealAccent.shade100,
+                child: Center(
+                  child: Text("Wednesday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.redAccent.shade100,
+                child: Center(
+                  child: Text("Thursday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 38,
+                height: 50,
+                color: Colors.purpleAccent.shade100,
+                child: Center(
+                  child: Text("Friday", style: TextStyle(fontSize: 10, color: Colors.black)),
+                ),
+              ),
+              Container(
+                width: 43,
+                height: 50,
+                color: Colors.lightGreenAccent.shade100,
+                child: Center(
+                  child: Text("Weekend", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
               ),
             ],
