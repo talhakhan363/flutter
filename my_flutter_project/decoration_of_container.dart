@@ -72,9 +72,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(
                     color: Colors.purple.shade500,
                     borderRadius: BorderRadius.circular(11),
-                    boxShadow: [BoxShadow(blurRadius: 2, color: Colors.purple.shade500, spreadRadius: 1)],
+                    boxShadow: [BoxShadow(blurRadius: 1, color: Colors.purple.shade900, spreadRadius: 3)],
                   ),
                 ),
+                // difference between blurRadius and spreadRadius is that blurRadius will create a shadow with a blur effect, while spreadRadius will create a shadow that expands outward from the edges of the container without any blur.
                 Container(width: 10, height: 10, decoration: BoxDecoration(color: Colors.white)),
                 Container(
                   width: 100,
