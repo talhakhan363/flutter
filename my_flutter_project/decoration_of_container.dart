@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(
                     color: Colors.purple.shade500,
                     borderRadius: BorderRadius.circular(11),
-                    boxShadow: [BoxShadow(blurRadius: 7, color: Colors.purple.shade500, spreadRadius: 2)],
+                    boxShadow: [BoxShadow(blurRadius: 2, color: Colors.purple.shade500, spreadRadius: 1)],
                   ),
                 ),
                 Container(width: 10, height: 10, decoration: BoxDecoration(color: Colors.white)),
