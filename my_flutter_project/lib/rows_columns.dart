@@ -41,7 +41,8 @@ class _MyHomePageState extends State<MyHomePage> {
             width: 400,
             color: Colors.lightBlueAccent,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment:
+                  MainAxisAlignment.spaceEvenly, // --> spaceEvenly se jitna space banta hai wo sabhi ke beech me equally distribute ho jata hai.
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
