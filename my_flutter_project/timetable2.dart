@@ -39,7 +39,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 39,
                 height: 50,
-                color: Colors.pinkAccent.shade700,
+                decoration: BoxDecoration(
+                  color: Colors.pinkAccent.shade700,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Days & Date", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -47,7 +50,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightBlueAccent.shade700,
+                decoration: BoxDecoration(
+                  color: Colors.lightBlueAccent.shade700,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Monday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -55,7 +61,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.limeAccent.shade700,
+                decoration: BoxDecoration(
+                  color: Colors.limeAccent.shade700,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Tuesday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -63,7 +72,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 54,
                 height: 50,
-                color: Colors.tealAccent.shade700,
+                decoration: BoxDecoration(
+                  color: Colors.tealAccent.shade700,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Wednesday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -71,7 +83,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.redAccent.shade700,
+                decoration: BoxDecoration(
+                  color: Colors.redAccent.shade700,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Thursday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -79,7 +94,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 38,
                 height: 50,
-                color: Colors.purpleAccent.shade700,
+                decoration: BoxDecoration(
+                  color: Colors.purpleAccent.shade700,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Friday", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -87,7 +105,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightGreenAccent.shade700,
+                decoration: BoxDecoration(
+                  color: Colors.lightGreenAccent.shade700,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Weekend", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -99,7 +120,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 39,
                 height: 50,
-                color: Colors.pinkAccent.shade400,
+                decoration: BoxDecoration(
+                  color: Colors.pinkAccent.shade400,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Uni Study", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -107,7 +131,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightBlueAccent.shade400,
+                decoration: BoxDecoration(
+                  color: Colors.lightBlueAccent.shade400,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("PC & DC", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -115,7 +142,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.limeAccent.shade400,
+                decoration: BoxDecoration(
+                  color: Colors.limeAccent.shade400,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("Mod & Sim", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -123,7 +153,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 54,
                 height: 50,
-                color: Colors.tealAccent.shade400,
+                decoration: BoxDecoration(
+                  color: Colors.tealAccent.shade400,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("SPM", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -131,7 +164,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.redAccent.shade400,
+                decoration: BoxDecoration(
+                  color: Colors.redAccent.shade400,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("CAcc", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -139,7 +175,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 38,
                 height: 50,
-                color: Colors.purpleAccent.shade400,
+                decoration: BoxDecoration(
+                  color: Colors.purpleAccent.shade400,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("PC & DC", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -147,7 +186,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightGreenAccent.shade400,
+                decoration: BoxDecoration(
+                  color: Colors.lightGreenAccent.shade400,
+                  border: Border.all(width: 1, color: Colors.black),
+                ),
                 child: Center(
                   child: Text("CoverUp", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
