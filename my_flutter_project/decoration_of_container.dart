@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
             color: Colors.purple.shade200,
             child: Column(
               children: [
-                Container(width: 10, height: 10, decoration: BoxDecoration(color: Colors.white)), //--> gap
+                Container(width: 10, height: 10, decoration: BoxDecoration(color: Colors.white)), //--> gap to separate the containers.
                 Container(
                   width: 100,
                   height: 100,
