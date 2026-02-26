@@ -46,7 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment
+                      .spaceBetween, // --> spaceBetween se jitna space banta hai wo first and last ke beech me equally distribute ho jata hai, aur first and last ke beech me koi space nahi hota.
                   children: [
                     Column(
                       children: [
