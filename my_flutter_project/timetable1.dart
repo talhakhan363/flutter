@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 39,
                 height: 50,
-                color: Colors.pinkAccent.shade100,
+                color: Colors.pinkAccent.shade400,
                 child: Center(
                   child: Text("Uni Study", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -107,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightBlueAccent.shade100,
+                color: Colors.lightBlueAccent.shade400,
                 child: Center(
                   child: Text("PC & DC", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -115,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.limeAccent.shade100,
+                color: Colors.limeAccent.shade400,
                 child: Center(
                   child: Text("Mod & Sim", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 54,
                 height: 50,
-                color: Colors.tealAccent.shade100,
+                color: Colors.tealAccent.shade400,
                 child: Center(
                   child: Text("SPM", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -131,7 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.redAccent.shade100,
+                color: Colors.redAccent.shade400,
                 child: Center(
                   child: Text("CAcc", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 38,
                 height: 50,
-                color: Colors.purpleAccent.shade100,
+                color: Colors.purpleAccent.shade400,
                 child: Center(
                   child: Text("PC & DC", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -147,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightGreenAccent.shade100,
+                color: Colors.lightGreenAccent.shade400,
                 child: Center(
                   child: Text("CoverUp", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -159,7 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 39,
                 height: 50,
-                color: Colors.pinkAccent.shade100,
+                color: Colors.pinkAccent.shade200,
                 child: Center(
                   child: Text("Gym day", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -167,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightBlueAccent.shade100,
+                color: Colors.lightBlueAccent.shade200,
                 child: Center(
                   child: Text("Push", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -175,7 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.limeAccent.shade100,
+                color: Colors.limeAccent.shade200,
                 child: Center(
                   child: Text("Pull", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -183,7 +183,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 54,
                 height: 50,
-                color: Colors.tealAccent.shade100,
+                color: Colors.tealAccent.shade200,
                 child: Center(
                   child: Text("Legs", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -191,7 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.redAccent.shade100,
+                color: Colors.redAccent.shade200,
                 child: Center(
                   child: Text("Shoulder", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -199,7 +199,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 38,
                 height: 50,
-                color: Colors.purpleAccent.shade100,
+                color: Colors.purpleAccent.shade200,
                 child: Center(
                   child: Text("Arms & legs", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
@@ -207,7 +207,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 width: 43,
                 height: 50,
-                color: Colors.lightGreenAccent.shade100,
+                color: Colors.lightGreenAccent.shade200,
                 child: Center(
                   child: Text("Rest", style: TextStyle(fontSize: 10, color: Colors.black)),
                 ),
