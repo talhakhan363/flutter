@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // these are the properties of the Scaffold, we can change them to change the look and feel of our home page.
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
 
-      // hellow world is being displayed in the body of the scaffold, this is the main content of our home page.
+      // hellow world is being displayed in the body of the scaffold, this is the main content of our home page.s
       body: Text('Hello World'),
     );
   }
