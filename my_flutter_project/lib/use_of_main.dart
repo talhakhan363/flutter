@@ -39,10 +39,12 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
+  /* here we create the state of our home page, this is where we will make changes 
+  to our home page, this is where we will change the UI of our home page. */
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-// this is the state of our home page, this is where we will make changes to our home page, this is where we will change the UI of our home page.
+//
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
