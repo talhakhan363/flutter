@@ -42,6 +42,8 @@ class MyHomePage extends StatefulWidget {
   /* here we create the state of our home page, this is where we will make changes 
   to our home page, this is where we will change the UI of our home page. */
   State<MyHomePage> createState() => _MyHomePageState();
+  // it is kept private because we don't want to access it from outside the class, we want to access it only from inside the class.
+  // main reason to keep it private is to prevent accidental access from outside the class.
 }
 
 //
