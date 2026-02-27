@@ -17,6 +17,8 @@ class MyApp extends StatelessWidget {
   // following is build function which is used to build the UI of our app, it is called whenever we need to change something in our app.
   @override
   Widget build(BuildContext context) {
+    // now this the app which is being created and returned by the build function, this is the app which is being run by the main function.
+    // all the changes will be made in this app, and this is the app which will be displayed on the screen.
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
