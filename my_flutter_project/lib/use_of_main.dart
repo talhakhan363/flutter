@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 /* [MyApp] is the class created by us/flutter because it knows if we are creating 
 flutter project we want to create flutter application. */
 // so it generates the class and code for us which contains one page.
+// this is the ignition point of our app, it is the first code to be executed when we run our app.
 void main() {
   runApp(const MyApp());
 }
