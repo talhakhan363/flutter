@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
 }
 
 // if we want changes in our app then we can use stateful widget.
+// now if the class is a "HomePage" it will return a page which is here "Scaffold", this is the page which is being displayed on the screen.
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
