@@ -14,7 +14,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // following is build function which is used to build the UI of our app, it is called whenever we need to change something in our app.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
