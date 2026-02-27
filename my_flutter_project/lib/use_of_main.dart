@@ -10,6 +10,7 @@ void main() {
 }
 
 // if we don't want changes in our app then we can use stateless widget.
+// now if class is an "App" it will return an app which is here "MaterialApp".
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
