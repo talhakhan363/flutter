@@ -9,6 +9,7 @@ void main() {
   runApp(const MyApp());
 }
 
+// if we don't want changes in our app then we can use stateless widget.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// if we want changes in our app then we can use stateful widget.
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
