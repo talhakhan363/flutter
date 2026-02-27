@@ -46,7 +46,7 @@ class MyHomePage extends StatefulWidget {
   // main reason to keep it private is to prevent accidental access from outside the class.
 }
 
-//
+// MyHomePage state extends State<MyHomePage> as we want all the properties and methods of the State class to be available in our MyHomePage state, so we can use them to change the UI of our home page.
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
