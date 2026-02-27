@@ -24,6 +24,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)),
+      // this is the home page of our app, this is the first page which will be displayed when we run our app.
+      // app needs atleast one page to run, if we don't provide any page it will show error because it doesn't know what to display on the screen.
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
