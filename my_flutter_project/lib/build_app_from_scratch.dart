@@ -16,8 +16,11 @@ class TalhasApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Talhas App",
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ), // this is the theme of our app, swatch is a color which contains different shades of the same color, we can use it to change the color of our app according to our needs.
+        // THE MATERIAL 3 WAY:
+        // Give it a seed color, and it automatically generates 30+ matching shades!
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        useMaterial3: true, // (This is true by default now)
+      ),
       home: TalhasHomePage(),
     );
   }
@@ -32,12 +35,13 @@ class _TalhasHomePageState extends State<TalhasHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // 1. ADD THE APP BAR BACK IN
       appBar: AppBar(
         title: const Text('Talhas Home Page'),
-        backgroundColor: Colors.blue, // <-- Forces the App Bar to be blue
-        foregroundColor: Colors.white, // <-- Makes the text white so it's readable
+        // 2. USE YOUR NEW AUTOMATIC COLOR SCHEME
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-      body: Center(child: Text('Hello World')),
+      body: const Center(child: Text('Hello World')),
     );
   }
 }
