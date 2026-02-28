@@ -5,5 +5,10 @@ import 'package:flutter/material.dart';
 / but it is a good practice to keep it as it is, because it makes our code 
 / more readable and understandable. */
 void main() {
-  runApp(const MyApp());
+  runApp(const TalhasApp());
+}
+
+class TalhasApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {}
 }
