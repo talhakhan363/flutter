@@ -1,3 +1,4 @@
+// this is the package which contains all the widgets and classes which are used to create a flutter app.
 import 'package:flutter/material.dart';
 
 // this is the most important, this is actually running our app.
