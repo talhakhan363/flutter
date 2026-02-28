@@ -18,10 +18,22 @@ class TalhasApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ), // this is the theme of our app, swatch is a color which contains different shades of the same color, we can use it to change the color of our app according to our needs.
-      home: Scaffold(
-        appBar: AppBar(title: Text('Talhas App')),
-        body: Center(child: Text('Hello World')),
-      ),
+      home: TalhasHomePage(),
+    );
+  }
+}
+
+class TalhasHomePage extends StatefulWidget {
+  @override
+  State<TalhasHomePage> createState() => _TalhasHomePageState();
+}
+
+class _TalhasHomePageState extends State<TalhasHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Talhas Home Page')),
+      body: Center(child: Text('Hello World')),
     );
   }
 }
