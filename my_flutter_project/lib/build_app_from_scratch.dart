@@ -26,6 +26,9 @@ class TalhasApp extends StatelessWidget {
 class TalhasHomePage extends StatefulWidget {
   @override
   State<TalhasHomePage> createState() => _TalhasHomePageState();
+  /* we create the state of our home page, because we want to 
+  change the UI of our home page, we want to make it dynamic, 
+  we want to make it interactive, so we need to create the state of our home page. */
 }
 
 class _TalhasHomePageState extends State<TalhasHomePage> {
