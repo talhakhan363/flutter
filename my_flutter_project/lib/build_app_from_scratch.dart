@@ -35,11 +35,12 @@ class _TalhasHomePageState extends State<TalhasHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // 1. ADD THE APP BAR BACK IN
+      // 1. ADD THE APP BAR
       appBar: AppBar(
-        title: const Text('Talhas Home Page'),
+        title: const Text('Talhas App'),
         // 2. USE YOUR NEW AUTOMATIC COLOR SCHEME
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary, // (This is the background color of the app bar)
+        foregroundColor: Theme.of(context).colorScheme.onPrimary, // (This is the text color of the app bar)
       ),
       body: const Center(child: Text('Hello World')),
     );
