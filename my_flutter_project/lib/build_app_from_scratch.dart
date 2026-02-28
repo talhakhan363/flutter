@@ -9,10 +9,15 @@ void main() {
 }
 
 class TalhasApp extends StatelessWidget {
+  // this is abstract function of class StatelessWidget, we have to override it to build the UI of our app.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: "Talhas App",
+      theme: ThemeData(
+        primarySwatch: Colors.blueGrey,
+      ), // this is the theme of our app, swatch is a color which contains different shades of the same color, we can use it to change the color of our app according to our needs.
       home: Scaffold(
         appBar: AppBar(title: Text('Talhas App')),
         body: Center(child: Text('Hello World')),
