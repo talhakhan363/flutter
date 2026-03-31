@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 / but it is a good practice to keep it as it is, because it makes our code 
 / more readable and understandable. */
 void main() {
-  runApp(TalhasApp());
+  runApp(
+    TalhasApp(),
+  ); // this is the function which runs our app, and it takes the widget which we want to run as an argument, in this case we are running the TalhasApp widget.
 }
 
 class TalhasApp extends StatelessWidget {
