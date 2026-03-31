@@ -35,31 +35,25 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
       body: SingleChildScrollView(
         // This is the SingleChildScrollView widget which is used to make the child widget scrollable when the content is more than the available space.
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            children: [
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Row(
-                    children: [
-                      Container(height: 150, width: 150, color: Colors.lightGreenAccent),
-                      Container(height: 150, width: 150, color: Colors.deepPurpleAccent),
-                      Container(height: 150, width: 150, color: Colors.amberAccent),
-                      Container(height: 150, width: 150, color: Colors.greenAccent),
-                    ],
-                  ),
-                ),
+        child: Column(
+          children: [
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(height: 150, width: 150, color: Colors.lightGreenAccent),
+                  Container(height: 150, width: 150, color: Colors.deepPurpleAccent),
+                  Container(height: 150, width: 150, color: Colors.amberAccent),
+                  Container(height: 150, width: 150, color: Colors.greenAccent),
+                ],
               ),
-              Container(height: 150, color: Colors.deepOrangeAccent),
-              Container(height: 150, color: Colors.deepPurpleAccent),
-              Container(height: 150, color: Colors.yellowAccent),
-              Container(height: 150, color: Colors.lightBlueAccent),
-              Container(height: 150, color: Colors.grey),
-            ],
-          ),
+            ),
+            Container(height: 150, color: Colors.deepOrangeAccent),
+            Container(height: 150, color: Colors.deepPurpleAccent),
+            Container(height: 150, color: Colors.yellowAccent),
+            Container(height: 150, color: Colors.lightBlueAccent),
+            Container(height: 150, color: Colors.grey),
+          ],
         ),
       ),
     );
