@@ -45,7 +45,25 @@ class _MyHomePageState extends State<MyHomePage> {
           onDoubleTap: () {
             print("Container Double Tapped!");
           },
-          child: Container(width: 200, height: 200, color: Colors.lightGreenAccent),
+          child: Container(
+            width: 200,
+            height: 200,
+            color: Colors.lightGreenAccent,
+            child: Center(
+              child: InkWell(
+                onTap: () {
+                  print("Text Tapped!");
+                },
+                onLongPress: () {
+                  print("Container Long Pressed!");
+                },
+                onDoubleTap: () {
+                  print("Container Double Tapped!");
+                },
+                child: Text("Tap, Long Press or Double Tap Me!", textAlign: TextAlign.center, style: TextStyle(fontSize: 18)),
+              ),
+            ),
+          ),
         ),
       ),
     );
