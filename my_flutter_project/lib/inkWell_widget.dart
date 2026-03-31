@@ -35,6 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
       body: Center(
         child: InkWell(
+          // This is the InkWell widget which is used to detect the tap, long press and double tap on any widget.
           onTap: () {
             print("Container Tapped!");
           },
