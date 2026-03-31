@@ -55,11 +55,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   print("Text Tapped!");
                 },
                 onLongPress: () {
-                  print("Container Long Pressed!");
+                  print("Text Long Pressed!");
                 },
                 onDoubleTap: () {
-                  print("Container Double Tapped!");
+                  print("Text Double Tapped!");
                 },
+                // here I have applied text inside container with InkWell, so that we can detect the tap, long press and double tap on text as well.
                 child: Text("Tap, Long Press or Double Tap Me!", textAlign: TextAlign.center, style: TextStyle(fontSize: 18)),
               ),
             ),
