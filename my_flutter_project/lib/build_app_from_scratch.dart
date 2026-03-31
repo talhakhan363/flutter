@@ -20,7 +20,9 @@ class TalhasApp extends StatelessWidget {
       theme: ThemeData(
         // THE MATERIAL 3 WAY:
         // Give it a seed color, and it automatically generates 30+ matching shades!
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.blue,
+        ), // (This is the seed color which will be used to generate the color scheme, you can change it to any color you want).
         useMaterial3: true, // (This is true by default now)
       ),
       home: TalhasHomePage(),
