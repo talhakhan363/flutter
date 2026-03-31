@@ -61,7 +61,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   print("Text Double Tapped!");
                 },
                 // here I have applied text inside container with InkWell, so that we can detect the tap, long press and double tap on text as well.
-                child: Text("Tap, Long Press or Double Tap Me!", textAlign: TextAlign.center, style: TextStyle(fontSize: 18)),
+                child: Text(
+                  "Tap, Long Press or Double Tap Me!",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
               ),
             ),
           ),
