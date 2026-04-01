@@ -31,14 +31,11 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    /* --> we use this array for dynamic inputs from any database or api.
-    better than listView bcz in that we had to input in the widget directly. */
-    //var arrNames = ["Talha", "Younus", "Ali", "Furqan", "Abdullah", "Saim", "Ahmed"];
-
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
       body: ListView(
-        // This is ListView:
+        // This is ListView: a widget used to display items in a scrollable list.
+        // It is combination of columns and rows. By default, it scrolls vertically, but we can change the scroll direction to horizontal using the scrollDirection property.
         // scrollDirection: Axis.horizontal, //--> converts into rows
         children: [
           Padding(
@@ -67,33 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-
-      /* This is ListView.Builder:
-        ListView.builder(itemBuilder: (context, index){
-          // array has been taken above.
-          return Text(arrNames[index], style: TextStyle(
-              fontSize: 21,
-              fontWeight: FontWeight.w500),);
-        },
-          itemCount: arrNames.length,
-          itemExtent: 80, // --> gives fix capacity to widgets.
-        ) 
-
-
-        // This is ListView.Separated which has divider in between.
-        // ListView.separated(itemBuilder: (context, index){
-        //   // array has been taken above.
-        //   return Text(arrNames[index], style: TextStyle(
-        //       fontSize: 21,
-        //       fontWeight: FontWeight.w500),);
-        // },
-        //   itemCount: arrNames.length,
-        //   separatorBuilder: (context, index){
-        //   return Divider(height: 8, thickness: 3);
-        //   },
-        // )
-
-    );*/
     );
   }
 }
