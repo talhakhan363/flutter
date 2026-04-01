@@ -36,6 +36,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView(
         // This is ListView: a widget used to display items in a scrollable list.
         // It is combination of columns and rows. By default, it scrolls vertically, but we can change the scroll direction to horizontal using the scrollDirection property.
+        // Basic listView is for static data, if we have dynamic data then we use listView builder which is more efficient than listView.
+        // ListView.builder is done in another file.
         // scrollDirection: Axis.horizontal, //--> converts into rows
         children: [
           Padding(
