@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             itemCount: arrNames.length,
             separatorBuilder: (context, index) {
-              return Divider(height: 8, thickness: 3);
+              return Divider(height: 10, thickness: 2, color: Colors.lightGreenAccent);
             },
           ),
     );
