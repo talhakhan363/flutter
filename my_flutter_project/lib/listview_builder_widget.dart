@@ -61,6 +61,9 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
       body:
           // This is ListView.Builder:
+          // It is used to create a scrollable list of items that are built on demand. It is more efficient than ListView because it only builds the items that are visible on the screen, rather than building all the items at once.
+          // It takes two required parameters: itemBuilder and itemCount.
+          // The itemBuilder is a function that takes the context and the index of the item and returns a widget to display for that item. The itemCount is the total number of items in the list.
           ListView.builder(
             itemBuilder: (context, index) {
               // array has been taken above.
