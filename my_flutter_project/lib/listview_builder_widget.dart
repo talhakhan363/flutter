@@ -79,19 +79,6 @@ class _MyHomePageState extends State<MyHomePage> {
             itemCount: arrNames.length,
             itemExtent: 60, // --> this is the height of each item.
           ),
-
-      // This is ListView.Separated which has divider in between.
-      // ListView.separated(itemBuilder: (context, index){
-      //   // array has been taken above.
-      //   return Text(arrNames[index], style: TextStyle(
-      //       fontSize: 21,
-      //       fontWeight: FontWeight.w500),);
-      // },
-      //   itemCount: arrNames.length,
-      //   separatorBuilder: (context, index){
-      //   return Divider(height: 8, thickness: 3);
-      //   },
-      // )
     );
   }
 }
