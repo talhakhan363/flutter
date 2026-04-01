@@ -35,7 +35,27 @@ class _MyHomePageState extends State<MyHomePage> {
     its better than listView bcz in that we had to input in the widget directl,y 
     but here we can just use the array to get the data from the database */
 
-    var arrNames = ["Talha", "Younus", "Ali", "Furqan", "Abdullah", "Saim", "Ahmed"];
+    var arrNames = [
+      "Talha",
+      "Younus",
+      "Ali",
+      "Furqan",
+      "Abdullah",
+      "Saim",
+      "Ahmed",
+      "Akram",
+      "Shahid",
+      "Shahbaz",
+      "Shoaib",
+      "Asif",
+      "Aslam",
+      "Ahsan",
+      "Adeel",
+      "Adnan",
+      "Aamir",
+      "Aftab",
+      "Aqib",
+    ];
 
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
@@ -44,10 +64,20 @@ class _MyHomePageState extends State<MyHomePage> {
           ListView.builder(
             itemBuilder: (context, index) {
               // array has been taken above.
-              return Text(arrNames[index], style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500));
+              // padding has applied to each item of the listView.builder, to container and text inside container.
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: Colors.amberAccent,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(arrNames[index], style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500)),
+                  ),
+                ),
+              );
             },
-            itemCount: arrNames.length - 1,
-            itemExtent: 80, // --> gives fix capacity to widgets.
+            itemCount: arrNames.length,
+            itemExtent: 60, // --> this is the height of each item.
           ),
 
       // This is ListView.Separated which has divider in between.
