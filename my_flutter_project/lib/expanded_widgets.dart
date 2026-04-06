@@ -33,6 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
+      // a common use of expanded widget is to divide its child in a particular ratio or to allocate any leftover space to a particular child.
       body: Row(
         children: [
           Expanded(child: Container(width: 75, height: 120, color: Colors.pink.shade100)),
