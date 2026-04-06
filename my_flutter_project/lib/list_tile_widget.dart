@@ -64,19 +64,19 @@ class _MyHomePageState extends State<MyHomePage> {
             // leading is the first element of the list tile.
             leading: Text(
               '${index + 1}',
-              style: TextStyle(fontSize: 11, color: Colors.blue, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 13, color: Colors.blue, fontWeight: FontWeight.bold),
             ),
             // title is the second element of the list tile.
             title: Text(arrNames[index], style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
             // subtitle is the third element of the list tile.
             subtitle: Text("Person Contact", style: TextStyle(fontSize: 11)),
             // trailing is the last element of the list tile.
-            trailing: Icon(Icons.account_circle, size: 23, color: Colors.blue),
+            trailing: Icon(Icons.account_circle, size: 28, color: Colors.blue),
           );
         },
         itemCount: arrNames.length,
         separatorBuilder: (context, index) {
-          return Divider(height: 8, thickness: 3);
+          return Divider(height: 1, thickness: 3);
         },
       ),
     );
