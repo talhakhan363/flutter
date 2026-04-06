@@ -41,9 +41,13 @@ class _MyHomePageState extends State<MyHomePage> {
         itemBuilder: (context, index) {
           // array has been taken above.
           return ListTile(
+            // leading is the first element of the list tile.
             leading: Text('${index + 1}', style: TextStyle(fontSize: 17)),
+            // title is the second element of the list tile.
             title: Text(arrNames[index], style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold)),
+            // subtitle is the third element of the list tile.
             subtitle: Text("Person Contact", style: TextStyle(fontSize: 18)),
+            // trailing is the last element of the list tile.
             trailing: Icon(Icons.account_circle),
           );
         },
