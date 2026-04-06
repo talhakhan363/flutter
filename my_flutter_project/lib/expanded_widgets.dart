@@ -37,10 +37,14 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Row(
         children: [
           Expanded(child: Container(width: 75, height: 120, color: Colors.pink.shade100)),
+          // above container will take all the space left after the other two containers have taken their space.
           Container(width: 75, height: 120, color: Colors.pink.shade200),
           Container(width: 75, height: 120, color: Colors.pink.shade300),
+          // above two containers are normal and will take their space and the remaining space will be taken by the first container.
+          // below container uses flex property to take space.
           Expanded(
-            flex: 4, // --> divides in ratio
+            flex: 2,
+            // --> divides remaining space in particular ratio, here 2:1, so the last container will take 2 times the space of the first container.
             child: Container(width: 75, height: 120, color: Colors.pink.shade400),
           ),
         ],
