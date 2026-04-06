@@ -33,19 +33,46 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
-      // a common use of expanded widget is to divide its child in a particular ratio or to allocate any leftover space to a particular child.
-      body: Row(
+
+      body: Column(
         children: [
-          Expanded(child: Container(width: 75, height: 120, color: Colors.pink.shade100)),
-          // above container will take all the space left after the other two containers have taken their space.
-          Container(width: 75, height: 120, color: Colors.pink.shade200),
-          Container(width: 75, height: 120, color: Colors.pink.shade300),
-          // above two containers are normal and will take their space and the remaining space will be taken by the first container.
-          // below container uses flex property to take space.
+          Container(
+            width: double.infinity,
+            height: 90,
+            color: Colors.pink.shade400,
+            child: Center(child: Text("Stories")),
+          ),
+          Container(
+            width: double.infinity,
+            height: 70,
+            color: Colors.pink.shade200,
+            child: Center(child: Text("Threads Updates")),
+          ),
           Expanded(
-            flex: 2,
-            // --> divides remaining space in particular ratio, here 2:1, so the last container will take 2 times the space of the first container.
-            child: Container(width: 75, height: 120, color: Colors.pink.shade400),
+            child: Container(
+              width: double.infinity,
+              height: 50,
+              color: Colors.pink.shade100,
+              child: Center(child: Text("POSTS")),
+            ),
+          ),
+          Container(
+            width: double.infinity,
+            height: 70,
+            color: Colors.pink.shade200,
+            child: Center(child: Text("Likes | Comments | Shares")),
+          ),
+          Container(
+            width: double.infinity,
+            height: 55,
+            color: Colors.pink.shade400,
+            child: Center(child: Text("Reels")),
+          ),
+          Container(
+            width: double.infinity,
+            height: 40,
+            color: Colors.pink.shade300,
+            child: Center(child: Text("Navigation Bar")),
           ),
         ],
       ),
