@@ -87,12 +87,20 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Container(
-              color: Colors.red,
-              padding: EdgeInsets.all(8),
-              width: 100,
-              height: 100,
-              child: CircleAvatar(backgroundImage: AssetImage("assets/images/person.png"), backgroundColor: Colors.deepOrangeAccent),
+            child: CircleAvatar(
+              backgroundColor: Colors.orangeAccent,
+              maxRadius: 50,
+              child: SizedBox(
+                child: Column(
+                  children: [
+                    SizedBox(width: 75, height: 75, child: Image.asset("assets/images/person.png")),
+                    Text(
+                      "STUDENT",
+                      style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.black),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
         ],
