@@ -49,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // textTheme is the one we are fetching from material app.
           // displayLarge is the one we are fetching from text theme.
           // ! means we are sure that displayLarge is not null.
+          // .copyWith means we are extending our universal theme and adding some more functionalities to it.
           Text("Hello Text 1", style: Theme.of(context).textTheme.displayLarge!.copyWith(color: Colors.deepOrangeAccent)),
 
           // some functions are defined in util.dart used here.
