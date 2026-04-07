@@ -33,12 +33,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
+
+      // circle avatar is a widget that is used to display a circular image.
+      // often used for profile pictures or icons.
       body: Column(
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              color: Colors.amberAccent,
+              color: Colors.blueAccent,
               padding: EdgeInsets.all(8),
               width: 100,
               height: 100,
@@ -48,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              color: Colors.amberAccent,
+              color: Colors.lightGreenAccent,
               padding: EdgeInsets.all(8),
               width: 100,
               height: 100,
@@ -58,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              color: Colors.amberAccent,
+              color: Colors.black,
               padding: EdgeInsets.all(8),
               width: 100,
               height: 100,
@@ -67,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 backgroundColor: Colors.grey,
                 child: Text(
                   "PROFESSOR",
-                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.white),
                 ),
               ),
             ),
@@ -75,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              color: Colors.amberAccent,
+              color: Colors.deepPurpleAccent,
               padding: EdgeInsets.all(8),
               width: 100,
               height: 100,
@@ -85,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              color: Colors.amberAccent,
+              color: Colors.cyanAccent,
               padding: EdgeInsets.all(8),
               width: 100,
               height: 100,
