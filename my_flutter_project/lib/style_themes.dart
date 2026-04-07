@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:lib/ui_helper/util.dart';
+import 'package:my_flutter_project/ui_helper/util.dart';
+// above we have imported our util file where new themes are defined.
 
 void main() {
   runApp(const MyApp());
@@ -52,10 +53,14 @@ class _MyHomePageState extends State<MyHomePage> {
           // .copyWith means we are extending our universal theme and adding some more functionalities to it.
           Text("Hello Text 1", style: Theme.of(context).textTheme.displayLarge!.copyWith(color: Colors.deepOrangeAccent)),
 
-          // some functions are defined in util.dart used here.
-          // Text("Hello Text 2", style: myTextStyleCustom(textColor: Colors.purple)),
+          // IF WE HAVE MANY THEME STYLES WE CAN CREATE A SEPARATE FILE AND DEFINE THEM THERE AND USE THEM HERE.
+          // some CREATED functions are defined in util.dart used here.
+          Text(
+            "Hello Text 2",
+            style: myTextStyleCustom(textColor: Colors.purple, fontWeight: FontWeight.w500),
+          ),
           Text("Hello Text 3", style: Theme.of(context).textTheme.displayLarge!.copyWith(color: Colors.green)),
-          // Text("Hello Text 4", style: myTextStyle22()),
+          Text("Hello Text 4", style: myTextStyle22()),
         ],
       ),
     );
