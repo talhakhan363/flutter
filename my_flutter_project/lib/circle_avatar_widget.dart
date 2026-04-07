@@ -36,18 +36,21 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: [
           Container(
+            color: Colors.amberAccent,
             padding: EdgeInsets.all(8),
             width: 120,
             height: 120,
             child: CircleAvatar(backgroundImage: AssetImage("assets/images/flutter.jpg")),
           ),
           Container(
+            color: Colors.amberAccent,
             padding: EdgeInsets.all(8),
             width: 120,
             height: 120,
             child: CircleAvatar(backgroundImage: AssetImage("assets/images/flutter1.png"), backgroundColor: Colors.cyanAccent),
           ),
           Container(
+            color: Colors.amberAccent,
             padding: EdgeInsets.all(8),
             width: 120,
             height: 120,
@@ -61,12 +64,14 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Container(
+            color: Colors.amberAccent,
             padding: EdgeInsets.all(8),
             width: 120,
             height: 120,
             child: CircleAvatar(backgroundImage: AssetImage("assets/images/flutter2.png"), backgroundColor: Colors.blueAccent.shade100),
           ),
           Container(
+            color: Colors.amberAccent,
             padding: EdgeInsets.all(8),
             width: 120,
             height: 120,
