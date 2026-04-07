@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_project/ui_Helper/util.dart';
+//import 'package:my_first_project/ui_Helper/util.dart';
 
 void main() {
   runApp(const MyApp());
@@ -47,9 +47,9 @@ class _MyHomePageState extends State<MyHomePage> {
           Text("Hello Text 1", style: Theme.of(context).textTheme.displayLarge!.copyWith(color: Colors.deepOrangeAccent)),
 
           // --> some functions are defined in util.dart used here.
-          Text("Hello Text 2", style: myTextStyleCustom(textColor: Colors.purple)),
-          Text("Hello Text 3", style: Theme.of(context).textTheme.displayLarge!.copyWith(color: Colors.green)),
-          Text("Hello Text 4", style: myTextStyle22()),
+          // Text("Hello Text 2", style: myTextStyleCustom(textColor: Colors.purple)),
+          // Text("Hello Text 3", style: Theme.of(context).textTheme.displayLarge!.copyWith(color: Colors.green)),
+          // Text("Hello Text 4", style: myTextStyle22()),
         ],
       ),
     );
