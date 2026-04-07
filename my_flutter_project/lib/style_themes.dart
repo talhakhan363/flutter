@@ -17,8 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         textTheme: TextTheme(
+          // we can set text theme here.
           displayLarge: TextStyle(fontSize: 31, fontWeight: FontWeight.bold),
           titleMedium: TextStyle(fontSize: 21, fontWeight: FontWeight.w500, fontStyle: FontStyle.italic),
+          // above themes have been set globally/universally and can be used anywhere in our app.
         ),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -49,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // ! means we are sure that displayLarge is not null.
           Text("Hello Text 1", style: Theme.of(context).textTheme.displayLarge!.copyWith(color: Colors.deepOrangeAccent)),
 
-          // --> some functions are defined in util.dart used here.
+          // some functions are defined in util.dart used here.
           // Text("Hello Text 2", style: myTextStyleCustom(textColor: Colors.purple)),
           Text("Hello Text 3", style: Theme.of(context).textTheme.displayLarge!.copyWith(color: Colors.green)),
           // Text("Hello Text 4", style: myTextStyle22()),
