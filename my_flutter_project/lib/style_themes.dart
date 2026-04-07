@@ -55,10 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
           // IF WE HAVE MANY THEME STYLES WE CAN CREATE A SEPARATE FILE AND DEFINE THEM THERE AND USE THEM HERE.
           // some CREATED functions are defined in util.dart used here.
-          Text(
-            "Hello Text 2",
-            style: myTextStyleCustom(textColor: Colors.purple, fontWeight: FontWeight.w500),
-          ),
+          Text("Hello Text 2", style: myTextStyleCustom(textColor: Colors.purple)),
           Text("Hello Text 3", style: Theme.of(context).textTheme.displayLarge!.copyWith(color: Colors.green)),
           Text("Hello Text 4", style: myTextStyle22()),
         ],
