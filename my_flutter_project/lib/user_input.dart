@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                Container(height: 21),
+                Container(height: 11), // to create gap.
                 TextField(
                   enabled: false, // here text field is disabled.
                   decoration: InputDecoration(
@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                Container(height: 21),
+                Container(height: 11),
                 TextField(
                   controller: passText,
                   obscureText: true, // --> hide the password values to dots.
@@ -89,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                Container(height: 21),
+                Container(height: 11),
 
                 // --> emailText and passText has been declared above globally.
                 TextField(
@@ -103,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                Container(height: 21),
+                Container(height: 11),
 
                 // --> here getting values from text field.
                 ElevatedButton(
