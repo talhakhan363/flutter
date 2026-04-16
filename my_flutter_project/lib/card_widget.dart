@@ -34,15 +34,19 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
       body: Center(
-        child: Card(
-          elevation: 10,
-          color: Colors.blue.shade900,
-          shadowColor: Colors.blue.shade700,
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              "Hello Talha",
-              style: TextStyle(fontSize: 31, fontWeight: FontWeight.bold, color: Colors.yellowAccent),
+        child: SizedBox(
+          width: 250,
+          height: 150,
+          child: Card(
+            elevation: 20,
+            color: Colors.blue.shade900,
+            shadowColor: Colors.blue.shade700,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                "Hello Talha",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.yellowAccent),
+              ),
             ),
           ),
         ),
