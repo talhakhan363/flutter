@@ -62,8 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Container(height: 21),
                 TextField(
-                  enabled: false,
+                  enabled: false, // here text field is disabled.
                   decoration: InputDecoration(
+                    // when text field is disabled then disabled border will be shown.
                     disabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide(color: Colors.black, width: 3),
