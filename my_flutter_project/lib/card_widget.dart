@@ -35,10 +35,11 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
       body: Center(
         child: SizedBox(
+          // SizedBox is used to give height and width to our card widget.
           width: 250,
           height: 150,
           child: Card(
-            elevation: 20,
+            elevation: 20, // provides shadow.
             color: Colors.blue.shade900,
             shadowColor: Colors.blue.shade700,
             child: Padding(
