@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
       body: Center(
         child: SizedBox(
-          width: 300,
+          width: 250,
           child: Container(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -48,10 +48,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   keyboardType: TextInputType.phone,
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.phone),
+                    // when text field is tapped then focused border will be shown.
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide(color: Colors.blue.shade700, width: 3),
                     ),
+                    // when text field is not tapped then enabled border will be shown.
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide(color: Colors.red, width: 3),
