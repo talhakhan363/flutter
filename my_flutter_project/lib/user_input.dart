@@ -77,8 +77,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   obscureText: true, // --> hide the password values to dots.
                   obscuringCharacter: "*", // --> replaces dots with any symbol we give.
                   decoration: InputDecoration(
-                    hintText: "Enter password here...",
-                    suffixText: "Username Exist",
+                    hintText: "Enter password here...", // text which disappears when we write something in text field.
+                    suffixText: "Username Exist", // --> text which appears at the end of text field, it doesn't disappear.
                     suffixIcon: IconButton(
                       icon: Icon(Icons.remove_red_eye, color: Colors.purple),
                       onPressed: () {},
