@@ -44,7 +44,11 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 /* ✅ The widgets are defined below from class, benefits are:
-       1) clean code  2) better readability  3) easy to configure errors */
+       1) clean code  
+       2) better readability  
+       3) easy to configure errors 
+       4) better performance as flutter will only rebuild the widget which is changed, not the whole app.
+       */
 class FirstWidget extends StatelessWidget {
   const FirstWidget({super.key});
 
