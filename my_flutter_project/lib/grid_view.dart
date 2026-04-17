@@ -57,11 +57,15 @@ class _MyHomePageState extends State<MyHomePage> {
             itemCount: arrColors.length,
 
             // we have learned this cross extent and count before.
-            // gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 100)
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, crossAxisSpacing: 11, mainAxisSpacing: 11),
+            // gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 100), this is for extent, which gives fix size to the grid, in big screen no of boxes increases.
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3,
+              crossAxisSpacing: 11,
+              mainAxisSpacing: 11,
+            ), // this is for count, which involves fixed number of columns for grid.
           ),
 
-      /*    
+      /* 
         // --> .count involves number of columns for grid.
         GridView.count(crossAxisCount: 5,
           crossAxisSpacing: 11, // --> gives space between columns.
@@ -78,8 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ], */
 
       /*
-        // .extent gives fix size to the grid, in big screen 
-            no of boxes increases.
+        // .extent gives fix size to the grid, in big screen no of boxes increases.
         GridView.extent(maxCrossAxisExtent: 100,
           crossAxisSpacing: 11,
           mainAxisSpacing: 11,
