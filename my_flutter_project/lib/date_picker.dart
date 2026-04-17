@@ -37,19 +37,22 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Select date here", style: TextStyle(fontSize: 25)),
+            Text("Select date here", style: TextStyle(fontSize: 19)),
             ElevatedButton(
-              onPressed: () async {
-                DateTime? datePicked = await showDatePicker(context: context, firstDate: DateTime(2021), lastDate: DateTime(2025));
-                if (datePicked != null) {
-                  print(
-                    "Date selected: "
-                    "${datePicked.day}-"
-                    "${datePicked.month}-"
-                    "${datePicked.year}",
-                  );
-                }
-              },
+              onPressed:
+                  // this is DatePicker, which allows the user to select a date from a calendar view. It takes in the context, the first date that can be selected, and the last date that can be selected as parameters.
+                  // This is an asynchronous function because we need to wait for the user to select a date before we can proceed.
+                  () async {
+                    DateTime? datePicked = await showDatePicker(context: context, firstDate: DateTime(2021), lastDate: DateTime(2025));
+                    if (datePicked != null) {
+                      print(
+                        "Date selected: "
+                        "${datePicked.day}-"
+                        "${datePicked.month}-"
+                        "${datePicked.year}",
+                      );
+                    }
+                  },
               child: Text("Show", style: TextStyle(fontSize: 20)),
             ),
             Text("Select time here", style: TextStyle(fontSize: 25)),
