@@ -49,6 +49,8 @@ class _MyHomePageState extends State<MyHomePage> {
        3) easy to configure errors 
        4) better performance as flutter will only rebuild the widget which is changed, not the whole app.
        */
+
+// we have build our widgets here extended from StatelessWidget as we are not changing any state in these widgets, if we want to change the state then we can extend from StatefulWidget.
 class FirstWidget extends StatelessWidget {
   const FirstWidget({super.key});
 
