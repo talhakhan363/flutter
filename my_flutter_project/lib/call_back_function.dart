@@ -37,12 +37,19 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.inversePrimary, title: Text(widget.title)),
-      body: ElevatedButton(
-        onPressed: () {
-          // --> this func is a callback func & can be use anywhere called.
-          myCallBackFunction();
-        },
-        child: Text("Click Me", style: TextStyle(fontSize: 21)),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(backgroundColor: Colors.blueAccent.shade100, elevation: 11),
+          // to give shadow to elevated button, we can use elevation property, which takes in a double value. The higher the value, the more shadow it will have.
+          onPressed: () {
+            // this func is a callback func & can be use anywhere called.
+            // callback functions mainly help in data flow in our app. It is a function that is passed as an argument to another function and is executed after some operation is completed.
+            // It is used to handle events or to perform some action after a certain task is completed.
+            myCallBackFunction();
+          },
+          child: Text("Click Me", style: TextStyle(fontSize: 21)),
+        ),
       ),
     );
   }
