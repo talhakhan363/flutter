@@ -59,12 +59,14 @@ class _MyHomePageState extends State<MyHomePage> {
             // we have learned this cross extent and count before.
             // gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 100), this is for extent, which gives fix size to the grid, in big screen no of boxes increases.
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
-              crossAxisSpacing: 11,
-              mainAxisSpacing: 11,
-            ), // this is for count, which involves fixed number of columns for grid.
+              // this is for count, which involves fixed number of columns for grid.
+              crossAxisCount: 3, // crossAxisCount is used to specify the number of columns in the grid.
+              crossAxisSpacing: 11, // this is for spacing between columns.
+              mainAxisSpacing: 11, // this is for spacing between rows.
+            ),
           ),
 
+      // INITIALLY WE STUDIED:
       /* 
         // --> .count involves number of columns for grid.
         GridView.count(crossAxisCount: 5,
