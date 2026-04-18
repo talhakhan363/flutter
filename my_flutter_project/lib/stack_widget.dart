@@ -45,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
             height: 370,
             color: Colors.pink,
             child: Align(
+              // align widget is used to place our widget in the desired position.
               alignment: Alignment.bottomRight,
               child: Padding(
                 padding: const EdgeInsets.only(right: 8.0),
@@ -86,10 +87,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
 
-          // --> for positioning
+          // --> for placing our widget in the desired position.
           Positioned(
-            top: 21,
-            left: 21,
+            top: 31,
+            left: 31,
             child: Container(
               width: 170,
               height: 190,
@@ -107,7 +108,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Positioned(
-            left: 60,
+            left: 70,
+            top: 10,
             child: Container(
               width: 90,
               height: 140,
