@@ -41,39 +41,41 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.flag, size: 31, color: Colors.pinkAccent.shade700),
+          Icon(Icons.flag, size: 21, color: Colors.pinkAccent.shade700),
           Row(
             // --> to align both text fields.
-            crossAxisAlignment: CrossAxisAlignment.baseline,
-            textBaseline: TextBaseline.alphabetic,
+            crossAxisAlignment: CrossAxisAlignment.baseline, // --> to align text in baseline.
+            textBaseline: TextBaseline.alphabetic, // --> to align text in baseline, it is required when crossAxisAlignment is baseline.
 
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 "Hello",
-                style: TextStyle(fontSize: 26, color: Colors.grey, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 15, color: Colors.grey, fontWeight: FontWeight.bold),
               ),
               Text(
                 "World!",
-                style: TextStyle(fontSize: 51, color: Colors.blue.shade500, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 40, color: Colors.blue.shade500, fontWeight: FontWeight.bold),
               ),
             ],
           ),
           RichText(
+            // RichText is used to display text with different styles in a single line.
+            // It takes a TextSpan as a child, which can have multiple TextSpans as children, each with different styles.
             text: TextSpan(
               // --> default text span created here.
-              style: TextStyle(fontSize: 16, color: Colors.grey, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 13, color: Colors.grey, fontWeight: FontWeight.bold),
 
               children: [
                 TextSpan(text: "Hello"),
                 TextSpan(
                   text: "World!",
-                  style: TextStyle(fontSize: 40, color: Colors.blue.shade500, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 25, color: Colors.blue.shade500, fontWeight: FontWeight.bold),
                 ),
                 TextSpan(text: "Welcome to"),
                 TextSpan(
                   text: "Flutter...",
-                  style: TextStyle(fontSize: 40, color: Colors.blue.shade500, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
+                  style: TextStyle(fontSize: 25, color: Colors.blue.shade500, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
                 ),
               ],
             ),
@@ -84,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // --> to align text in center
             textAlign: TextAlign.center,
 
-            style: TextStyle(fontSize: 31, color: Colors.pinkAccent.shade700, fontWeight: FontWeight.bold, fontFamily: "MyFont1"),
+            style: TextStyle(fontSize: 15, color: Colors.pinkAccent.shade700, fontWeight: FontWeight.bold, fontFamily: "MyFont1"),
           ),
         ],
       ),
