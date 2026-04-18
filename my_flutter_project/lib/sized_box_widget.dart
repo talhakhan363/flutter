@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: const EdgeInsets.all(8.0),
                   child: ConstrainedBox(
                     // constrained box is used to give the constraints to the child widget, it will take the constraints and apply it to the child widget.
-                    constraints: BoxConstraints(maxHeight: 80, maxWidth: 250, minHeight: 20, minWidth: 150),
+                    constraints: BoxConstraints(maxHeight: 80, maxWidth: 250, minHeight: 30, minWidth: 150),
                     child: SizedBox(
                       width: 200,
                       height: 45,
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ConstrainedBox(
-                    constraints: BoxConstraints(maxHeight: 80, maxWidth: 250, minHeight: 20, minWidth: 150),
+                    constraints: BoxConstraints(maxHeight: 80, maxWidth: 250, minHeight: 30, minWidth: 150),
                     child: SizedBox.shrink(
                       child: ElevatedButton(
                         onPressed: () {},
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ConstrainedBox(
-                    constraints: BoxConstraints(maxHeight: 80, maxWidth: 250, minHeight: 20, minWidth: 150),
+                    constraints: BoxConstraints(maxHeight: 80, maxWidth: 250, minHeight: 30, minWidth: 150),
                     child: SizedBox.expand(
                       child: ElevatedButton(
                         onPressed: () {},
