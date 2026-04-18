@@ -71,12 +71,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 TextSpan(text: "Hello"),
                 TextSpan(
                   text: "World!",
-                  style: TextStyle(fontSize: 25, color: Colors.blue.shade500, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 25, color: Colors.blue.shade500, fontStyle: FontStyle.italic),
                 ),
                 TextSpan(text: "Welcome to"),
                 TextSpan(
                   text: "Flutter...",
-                  style: TextStyle(fontSize: 25, color: Colors.blue.shade500, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
+                  style: TextStyle(fontSize: 25, color: Colors.blue.shade500, fontStyle: FontStyle.italic),
                 ),
               ],
             ),
