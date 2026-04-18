@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
               flex: 4,
               child: Container(
                 color: Colors.purple,
-                child: ListView.builder(
+                child: ListView.separated(
                   itemBuilder: (context, index) => ListTile(
                     leading: CircleAvatar(backgroundColor: Colors.white, radius: 30),
                     title: Text(
@@ -68,13 +68,43 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                     ),
                     subtitle: Text("Contact $index", style: TextStyle(color: Colors.white)),
+                    trailing: Icon(Icons.call, color: Colors.white, size: 19),
                   ),
                   itemCount: 15,
+                  separatorBuilder: (context, index) {
+                    return Divider(height: 15, thickness: 1, color: Colors.white);
+                    // divider is used to create a line between the items of the list.
+                  },
                 ),
               ),
             ),
-            Expanded(flex: 1, child: Container(color: Colors.lightGreenAccent)),
-            Expanded(flex: 2, child: Container(color: Colors.brown)),
+            Expanded(
+              flex: 1,
+              child: Container(
+                color: Colors.lightGreenAccent,
+                child: ListView.builder(
+                  itemBuilder: (context, index) => Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      width: 100,
+                      decoration: BoxDecoration(color: Colors.blueGrey, borderRadius: BorderRadius.circular(11)),
+                    ),
+                  ),
+                  itemCount: 10,
+                  scrollDirection: Axis.horizontal,
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 2,
+              child: Container(
+                color: Colors.brown,
+                child: GridView.count(
+                  crossAxisCount: 3,
+                  children: List.generate(9, (index) => Container(margin: EdgeInsets.all(8), color: Color(0xFFC4A484))),
+                ),
+              ),
+            ),
           ],
         ),
       ),
