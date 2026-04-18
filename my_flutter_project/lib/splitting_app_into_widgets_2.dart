@@ -39,10 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
 
-      body: SizedBox(child: Column(children: [
-            
-          ],
-        )),
+      body: SizedBox(child: Column(children: [Stories(), Contacts(), Threads(), ItemsGallery()])),
     );
   }
 }
