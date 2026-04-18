@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_project/ui_helper/util.dart';
 import 'package:my_flutter_project/widgets/rounded_button.dart';
+// imported both util and rounded button to use in this file.
 
 void main() {
   runApp(const MyApp());
@@ -46,6 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 btnName: "Start",
                 btnIcon: Icon(Icons.start, size: 31),
                 btnBgColor: Colors.greenAccent.shade400,
+                // this is where we use callback as an onPressed function of our custom button.
                 callback: () {
                   print("Starting...");
                 },
