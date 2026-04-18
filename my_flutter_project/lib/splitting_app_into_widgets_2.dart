@@ -39,75 +39,10 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
 
-      body: SizedBox(
-        child: Column(
-          children: [
-            Expanded(
-              flex: 2,
-              child: Container(
-                color: Colors.orange,
-                child: ListView.builder(
-                  itemBuilder: (context, index) => Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: SizedBox(width: 80, child: CircleAvatar(backgroundColor: Colors.green, radius: 30)),
-                  ),
-                  itemCount: 10,
-                  scrollDirection: Axis.horizontal,
-                ),
-              ),
-            ),
-            Expanded(
-              flex: 4,
-              child: Container(
-                color: Colors.purple,
-                child: ListView.separated(
-                  itemBuilder: (context, index) => ListTile(
-                    leading: CircleAvatar(backgroundColor: Colors.white, radius: 30),
-                    title: Text(
-                      "Name $index",
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                    ),
-                    subtitle: Text("Contact $index", style: TextStyle(color: Colors.white)),
-                    trailing: Icon(Icons.call, color: Colors.white, size: 19),
-                  ),
-                  itemCount: 15,
-                  separatorBuilder: (context, index) {
-                    return Divider(height: 15, thickness: 1, color: Colors.white);
-                    // divider is used to create a line between the items of the list.
-                  },
-                ),
-              ),
-            ),
-            Expanded(
-              flex: 1,
-              child: Container(
-                color: Colors.lightGreenAccent,
-                child: ListView.builder(
-                  itemBuilder: (context, index) => Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      width: 100,
-                      decoration: BoxDecoration(color: Colors.blueGrey, borderRadius: BorderRadius.circular(11)),
-                    ),
-                  ),
-                  itemCount: 10,
-                  scrollDirection: Axis.horizontal,
-                ),
-              ),
-            ),
-            Expanded(
-              flex: 2,
-              child: Container(
-                color: Colors.brown,
-                child: GridView.count(
-                  crossAxisCount: 3,
-                  children: List.generate(9, (index) => Container(margin: EdgeInsets.all(8), color: Color(0xFFC4A484))),
-                ),
-              ),
-            ),
+      body: SizedBox(child: Column(children: [
+            
           ],
-        ),
-      ),
+        )),
     );
   }
 }
@@ -120,57 +55,95 @@ class _MyHomePageState extends State<MyHomePage> {
        */
 
 // we have build our widgets here extended from StatelessWidget as we are not changing any state in these widgets, if we want to change the state then we can extend from StatefulWidget.
-class FirstWidget extends StatelessWidget {
-  const FirstWidget({super.key});
+class Stories extends StatelessWidget {
+  const Stories({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 200,
-      height: 200,
-      color: Colors.pink.shade500,
-      child: Center(
-        child: Text(
-          "Hello Talha",
-          style: TextStyle(fontSize: 21, fontWeight: FontWeight.bold, color: Colors.white),
+    return Expanded(
+      flex: 2,
+      child: Container(
+        color: Colors.orange,
+        child: ListView.builder(
+          itemBuilder: (context, index) => Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(width: 80, child: CircleAvatar(backgroundColor: Colors.green, radius: 30)),
+          ),
+          itemCount: 10,
+          scrollDirection: Axis.horizontal,
         ),
       ),
     );
   }
 }
 
-class SecondWidget extends StatelessWidget {
-  const SecondWidget({super.key});
+class Contacts extends StatelessWidget {
+  const Contacts({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 200,
-      height: 200,
-      color: Colors.pink.shade300,
-      child: Center(
-        child: Text(
-          "Hello Talha",
-          style: TextStyle(fontSize: 21, fontWeight: FontWeight.bold, color: Colors.white),
+    return Expanded(
+      flex: 4,
+      child: Container(
+        color: Colors.purple,
+        child: ListView.separated(
+          itemBuilder: (context, index) => ListTile(
+            leading: CircleAvatar(backgroundColor: Colors.white, radius: 30),
+            title: Text(
+              "Name $index",
+              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+            subtitle: Text("Contact $index", style: TextStyle(color: Colors.white)),
+            trailing: Icon(Icons.call, color: Colors.white, size: 19),
+          ),
+          itemCount: 15,
+          separatorBuilder: (context, index) {
+            return Divider(height: 15, thickness: 1, color: Colors.white);
+            // divider is used to create a line between the items of the list.
+          },
         ),
       ),
     );
   }
 }
 
-class ThirdWidget extends StatelessWidget {
-  const ThirdWidget({super.key});
+class Threads extends StatelessWidget {
+  const Threads({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 200,
-      height: 200,
-      color: Colors.pink.shade100,
-      child: Center(
-        child: Text(
-          "Hello Talha",
-          style: TextStyle(fontSize: 21, fontWeight: FontWeight.bold, color: Colors.white),
+    return Expanded(
+      flex: 1,
+      child: Container(
+        color: Colors.lightGreenAccent,
+        child: ListView.builder(
+          itemBuilder: (context, index) => Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              width: 100,
+              decoration: BoxDecoration(color: Colors.blueGrey, borderRadius: BorderRadius.circular(11)),
+            ),
+          ),
+          itemCount: 10,
+          scrollDirection: Axis.horizontal,
+        ),
+      ),
+    );
+  }
+}
+
+class ItemsGallery extends StatelessWidget {
+  const ItemsGallery({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      flex: 2,
+      child: Container(
+        color: Colors.brown,
+        child: GridView.count(
+          crossAxisCount: 3,
+          children: List.generate(9, (index) => Container(margin: EdgeInsets.all(8), color: Color(0xFFC4A484))),
         ),
       ),
     );
