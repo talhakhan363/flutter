@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:my_first_project/ui_Helper/util.dart';
-//import 'package:my_first_project/widgets/rounded_button.dart';
+import 'package:my_flutter_project/ui_helper/util.dart';
+import 'package:my_flutter_project/widgets/rounded_button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,57 +42,57 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(
               width: 220,
               height: 50,
-              // child: RoundedButton(
-              //   btnName: "Start",
-              //   btnIcon: Icon(Icons.start, size: 31),
-              //   btnBgColor: Colors.greenAccent.shade400,
-              //   callback: () {
-              //     print("Starting...");
-              //   },
-              //   btnTextStyle: myTextStyle22(),
-              // ),
+              child: RoundedButton(
+                btnName: "Start",
+                btnIcon: Icon(Icons.start, size: 31),
+                btnBgColor: Colors.greenAccent.shade400,
+                callback: () {
+                  print("Starting...");
+                },
+                btnTextStyle: myTextStyle22(),
+              ),
             ),
             Container(height: 11),
             SizedBox(
               width: 220,
               height: 50,
-              // child: RoundedButton(
-              //   btnName: "Pause",
-              //   btnIcon: Icon(Icons.pause, size: 31),
-              //   btnBgColor: Colors.greenAccent.shade400,
-              //   callback: () {
-              //     print("Taking a pause...");
-              //   },
-              //   btnTextStyle: myTextStyle22(),
-              // ),
+              child: RoundedButton(
+                btnName: "Pause",
+                btnIcon: Icon(Icons.pause, size: 31),
+                btnBgColor: Colors.greenAccent.shade400,
+                callback: () {
+                  print("Taking a pause...");
+                },
+                btnTextStyle: myTextStyle22(),
+              ),
             ),
             Container(height: 11),
             SizedBox(
               width: 220,
               height: 50,
-              // child: RoundedButton(
-              //   btnName: "Resume",
-              //   btnIcon: Icon(Icons.play_arrow, size: 31),
-              //   btnBgColor: Colors.greenAccent.shade400,
-              //   callback: () {
-              //     print("Resume where leftover...");
-              //   },
-              //   btnTextStyle: myTextStyle22(),
-              // ),
+              child: RoundedButton(
+                btnName: "Resume",
+                btnIcon: Icon(Icons.play_arrow, size: 31),
+                btnBgColor: Colors.greenAccent.shade400,
+                callback: () {
+                  print("Resume where leftover...");
+                },
+                btnTextStyle: myTextStyle22(),
+              ),
             ),
             Container(height: 11),
             SizedBox(
               width: 220,
               height: 50,
-              // child: RoundedButton(
-              //   btnName: "Main menu",
-              //   btnIcon: Icon(Icons.menu, size: 31),
-              //   btnBgColor: Colors.greenAccent.shade400,
-              //   callback: () {
-              //     print("Get back to main menu...");
-              //   },
-              //   btnTextStyle: myTextStyle22(),
-              // ),
+              child: RoundedButton(
+                btnName: "Main menu",
+                btnIcon: Icon(Icons.menu, size: 31),
+                btnBgColor: Colors.greenAccent.shade400,
+                callback: () {
+                  print("Get back to main menu...");
+                },
+                btnTextStyle: myTextStyle22(),
+              ),
             ),
           ],
         ),
