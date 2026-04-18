@@ -10,11 +10,13 @@ class RoundedButton extends StatelessWidget {
 
   /* callback function is a function that is passed as an argument to another function.
   it doesn't have any parameters and it doesn't return any value.
-  mainly used to handle events or to perform some action after a certain task is completed. */
+  mainly used to handle events or to perform some action after a certain task is completed. 
+*/
 
+  // --> constructor
   const RoundedButton({
     super.key,
-    // --> button name should be given that's why required.
+    // --> button name should be given mandatory that's why required.
     required this.btnName,
     this.btnIcon,
     this.btnBgColor = Colors.blue, // --> default color of button.
