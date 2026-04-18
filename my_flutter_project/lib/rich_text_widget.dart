@@ -44,7 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Icon(Icons.flag, size: 21, color: Colors.pinkAccent.shade700),
           Row(
             // --> to align both text fields.
-            crossAxisAlignment: CrossAxisAlignment.baseline, // --> to align text in baseline.
+            crossAxisAlignment: CrossAxisAlignment
+                .baseline, // --> to align text in baseline means to align text in the same line, it is required when text have different font size.
             textBaseline: TextBaseline.alphabetic, // --> to align text in baseline, it is required when crossAxisAlignment is baseline.
 
             mainAxisAlignment: MainAxisAlignment.center,
