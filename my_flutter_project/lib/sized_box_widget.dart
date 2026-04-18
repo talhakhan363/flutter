@@ -81,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: SizedBox.expand(
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: Text("Button 02", style: TextStyle(fontSize: 15)),
+                        child: Text("Button 03", style: TextStyle(fontSize: 15)),
                       ),
                     ),
                   ),
@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     dimension: 100,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Text("Button 02", style: TextStyle(fontSize: 15)),
+                      child: Text("Button 04", style: TextStyle(fontSize: 15)),
                     ),
                   ),
                 ),
