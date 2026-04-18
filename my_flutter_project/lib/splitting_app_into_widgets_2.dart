@@ -56,7 +56,23 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            Expanded(flex: 4, child: Container(color: Colors.purple)),
+            Expanded(
+              flex: 4,
+              child: Container(
+                color: Colors.purple,
+                child: ListView.builder(
+                  itemBuilder: (context, index) => ListTile(
+                    leading: CircleAvatar(backgroundColor: Colors.white, radius: 30),
+                    title: Text(
+                      "Name $index",
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Text("Contact $index", style: TextStyle(color: Colors.white)),
+                  ),
+                  itemCount: 15,
+                ),
+              ),
+            ),
             Expanded(flex: 1, child: Container(color: Colors.lightGreenAccent)),
             Expanded(flex: 2, child: Container(color: Colors.brown)),
           ],
