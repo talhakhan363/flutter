@@ -47,22 +47,31 @@ class MyHomeState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Count: $incrementCounter", style: TextStyle(fontSize: 21)),
-            ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  increment();
-                });
-              },
-              child: Text("Increment Counter", style: TextStyle(fontSize: 17)),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text("Count: $incrementCounter", style: TextStyle(fontSize: 21)),
             ),
-            OutlinedButton(
-              onPressed: () {
-                setState(() {
-                  incrementCounter = 0;
-                });
-              },
-              child: Text("Reset", style: TextStyle(fontSize: 17)),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    increment();
+                  });
+                },
+                child: Text("Increment Counter", style: TextStyle(fontSize: 17)),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextButton(
+                onPressed: () {
+                  setState(() {
+                    incrementCounter = 0;
+                  });
+                },
+                child: Text("Reset", style: TextStyle(fontSize: 17)),
+              ),
             ),
           ],
         ),
