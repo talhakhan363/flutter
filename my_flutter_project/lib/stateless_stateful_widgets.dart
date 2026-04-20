@@ -31,8 +31,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class MyHomeState extends State<MyHomePage> {
+  // we have initialized the counter variable to 0.
   var incrementCounter = 0;
+
   void increment() {
+    // this function will increment the counter variable by 1.
     incrementCounter++;
   }
 
@@ -44,14 +47,22 @@ class MyHomeState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Count: $incrementCounter", style: TextStyle(fontSize: 25)),
+            Text("Count: $incrementCounter", style: TextStyle(fontSize: 21)),
             ElevatedButton(
               onPressed: () {
                 setState(() {
                   increment();
                 });
               },
-              child: Text("Increment Counter", style: TextStyle(fontSize: 21)),
+              child: Text("Increment Counter", style: TextStyle(fontSize: 17)),
+            ),
+            OutlinedButton(
+              onPressed: () {
+                setState(() {
+                  incrementCounter = 0;
+                });
+              },
+              child: Text("Reset", style: TextStyle(fontSize: 17)),
             ),
           ],
         ),
