@@ -38,16 +38,18 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
 
-      body: Container(
-        color: Colors.blueGrey,
-        child: Stack(
-          children: [
-            Positioned(top: 200, left: 152, child: Container(width: 120, height: 180, color: Colors.red)),
-            Positioned(top: 400, left: 262, child: Container(width: 120, height: 180, color: Colors.red)),
-            Positioned(top: 400, right: 262, child: Container(width: 120, height: 180, color: Colors.red)),
-          ],
-        ),
-      ),
+      body:
+          // Positioned widget is used to position the child widget in the stack widget. It takes the top, left, right and bottom properties to position the child widget.
+          Container(
+            color: Colors.blueGrey,
+            child: Stack(
+              children: [
+                Positioned(top: 100, left: 82, child: Container(width: 20, height: 80, color: Colors.red)),
+                Positioned(top: 300, left: 182, child: Container(width: 20, height: 80, color: Colors.green)),
+                Positioned(top: 500, right: 172, child: Container(width: 20, height: 80, color: Colors.blue)),
+              ],
+            ),
+          ),
     );
   }
 }
